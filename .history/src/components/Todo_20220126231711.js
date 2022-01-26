@@ -70,7 +70,6 @@ const Todo = () => {
   return (
     <>
       <div>
-        <br />
         <a href="https://github.com/khalidhossainbadhon/todo-app">
           For more info click here!
         </a>

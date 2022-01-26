@@ -12,11 +12,11 @@
 }
 h1 {
   background-color: #ffe600;
-  color: rgb(0, 0, 0);
+  color: #fff;
   text-align: center;
 }
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(196, 86, 86);
   padding: 20px;
 }
 #input-box {

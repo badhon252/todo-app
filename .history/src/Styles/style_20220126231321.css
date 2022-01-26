@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #1f0b44;
+  background-color: #291352;
 }
 
 .main-div {
@@ -11,13 +11,12 @@
   width: 24rem;
 }
 h1 {
-  background-color: #ffe600;
-  color: rgb(0, 0, 0);
+  color: #ffe600;
   text-align: center;
 }
 a {
-  color: rgb(255, 255, 255);
-  padding: 20px;
+  color: white;
+  margin-top: 20px;
 }
 #input-box {
   color: #000000;

@@ -68,74 +68,70 @@ const Todo = () => {
   }, [todo]);
 
   return (
-    <>
+    <div className="main-div">
       <div>
-        <br />
         <a href="https://github.com/khalidhossainbadhon/todo-app">
           For more info click here!
         </a>
       </div>
-
-      <div className="main-div">
-        <h1>Todo List</h1>
-        <div className="inputs">
-          <input
-            type="text"
-            name=""
-            id="input-box"
-            placeholder="Type your todo here!"
-            value={inputItems}
-            onChange={(e) => setInputItems(e.target.value)}
+      <h1>Todo List</h1>
+      <div className="inputs">
+        <input
+          type="text"
+          name=""
+          id="input-box"
+          placeholder="Type your todo here!"
+          value={inputItems}
+          onChange={(e) => setInputItems(e.target.value)}
+        />
+        {toggleButton ? (
+          <FontAwesomeIcon
+            icon={faEdit}
+            size="6x"
+            className="add-btn edit"
+            onClick={addItems}
           />
-          {toggleButton ? (
-            <FontAwesomeIcon
-              icon={faEdit}
-              size="6x"
-              className="add-btn edit"
-              onClick={addItems}
-            />
-          ) : (
-            <FontAwesomeIcon
-              icon={faAdd}
-              className="add-btn"
-              onClick={addItems}
-            />
-          )}
+        ) : (
+          <FontAwesomeIcon
+            icon={faAdd}
+            className="add-btn"
+            onClick={addItems}
+          />
+        )}
 
-          {/* <button type="submit" className="add-btn" onClick={addItems}>
+        {/* <button type="submit" className="add-btn" onClick={addItems}>
           Add
         </button> */}
-        </div>
-        {/* showing items =============== */}
-        <div className="show-items">
-          {todo.map((currentItems) => {
-            return (
-              <div key={currentItems.id}>
-                <li className="todo-item">
-                  {currentItems.name}
-                  <FontAwesomeIcon
-                    icon={faEdit}
-                    className="icon edit"
-                    onClick={() => editItem(currentItems.id)}
-                  />
-                  <FontAwesomeIcon
-                    icon={faTrash}
-                    className="icon delete"
-                    onClick={() => handleDelete(currentItems.id)}
-                  />
-                </li>
-              </div>
-            );
-          })}
-          <input
-            type="button"
-            value="Delete All"
-            className="delete-all"
-            onClick={() => setTodo([])}
-          />
-        </div>
       </div>
-    </>
+      {/* showing items =============== */}
+      <div className="show-items">
+        {todo.map((currentItems) => {
+          return (
+            <div key={currentItems.id}>
+              <li className="todo-item">
+                {currentItems.name}
+                <FontAwesomeIcon
+                  icon={faEdit}
+                  className="icon edit"
+                  onClick={() => editItem(currentItems.id)}
+                />
+                <FontAwesomeIcon
+                  icon={faTrash}
+                  className="icon delete"
+                  onClick={() => handleDelete(currentItems.id)}
+                />
+              </li>
+            </div>
+          );
+        })}
+        <input
+          type="button"
+          value="Delete All"
+          className="delete-all"
+          onClick={() => setTodo([])}
+        />
+      </div>
+    </div>
   );
 };
 

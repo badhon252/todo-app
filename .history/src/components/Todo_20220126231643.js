@@ -68,13 +68,12 @@ const Todo = () => {
   }, [todo]);
 
   return (
-    <>
-      <div>
-        <br />
+    <div>
+      <li>
         <a href="https://github.com/khalidhossainbadhon/todo-app">
           For more info click here!
         </a>
-      </div>
+      </li>
 
       <div className="main-div">
         <h1>Todo List</h1>
@@ -135,7 +134,7 @@ const Todo = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

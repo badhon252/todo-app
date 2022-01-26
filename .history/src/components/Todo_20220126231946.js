@@ -69,12 +69,12 @@ const Todo = () => {
 
   return (
     <>
-      <div>
+      <ol>
         <br />
         <a href="https://github.com/khalidhossainbadhon/todo-app">
           For more info click here!
         </a>
-      </div>
+      </ol>
 
       <div className="main-div">
         <h1>Todo List</h1>
