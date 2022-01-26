@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-div {
+  padding: 0 auto;
+  color: #3e3672;
+}

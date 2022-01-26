@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #e000c2;
+}
+
+.main-div {
+  margin: 30px;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+#input-box {
+  color: #ffffff;
+  margin: 10px;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-div {
+  margin: 30px;
+  text-align: center;
+  color: #3e3672;
+}
+
+#input-box {
+  font-size: 1rem;
+}
