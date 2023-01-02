@@ -71,7 +71,7 @@ const Todo = () => {
     <>
       <div>
         <br />
-        <a href="https://github.com/khalidhossainbadhon/todo-app">
+        <a href="https://github.com/badhon252/todo-app">
           For more info click here!
         </a>
       </div>
